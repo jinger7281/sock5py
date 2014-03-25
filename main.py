@@ -15,5 +15,6 @@ while True:
     clientSocket,clientAddr=Serversocket.accept()
     clientStatistic+=1
     print("*Client[",clientAddr[0],":",clientAddr[1],"]:",clientStatistic)
-    slave=slaves.Manager()
+    slave=slaves.slave()
     slave.setClientInfo(clientSocket,clientAddr)
+    slave.start()
