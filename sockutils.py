@@ -1,5 +1,5 @@
 #encoding:utf-8
-
+#test
 import struct
 
 def step1(cmd):
